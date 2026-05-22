@@ -1,0 +1,51 @@
+/* tokens — única fuente de verdad */
+
+:root {
+  /* color */
+  --ink: #0A0A0A;
+  --paper: #FAFAF7;
+  --muted: #6B6B6B;
+  --rule: #D9D5C8;
+  --accent: #FF3B00;
+
+  /* typography — Switzer self-hosted (Fontshare / ITF, free for commercial use) */
+  --font-sans: "Switzer", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "JetBrains Mono", "IBM Plex Mono", Menlo, monospace;
+
+  /* type scale — ratio 1.333 */
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-base: 16px;
+  --text-lg: 21px;
+  --text-xl: 42px;
+  --text-2xl: 84px;
+  --text-3xl: 144px;
+
+  /* spacing — base 8, sin valores intermedios */
+  --space-8: 8px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-40: 40px;
+  --space-64: 64px;
+  --space-96: 96px;
+  --space-144: 144px;
+  --space-240: 240px;
+
+  /* grid */
+  --grid-columns: 12;
+  --grid-gutter: 24px;
+  --grid-margin: 48px;
+  --grid-max: 1440px;
+
+  /* rule */
+  --rule-width: 1px;
+}
+
+@media (max-width: 640px) {
+  :root {
+    --grid-margin: 16px;
+    --text-xl: 32px;
+    --text-2xl: 52px;
+    --text-3xl: 72px;
+  }
+}
