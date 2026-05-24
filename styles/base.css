@@ -129,6 +129,10 @@ a:focus-visible {
   color: var(--muted);
 }
 
+.t-right {
+  text-align: right;
+}
+
 /* visually hidden — visible para screen readers, oculto en pantalla */
 .sr-only {
   position: absolute;

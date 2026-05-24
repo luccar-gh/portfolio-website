@@ -27,6 +27,16 @@
   transition: border-color 280ms ease;
 }
 
+/* index links — subrayado hover-only para no romper el ritmo tipográfico */
+.index__link {
+  border-bottom-color: transparent;
+}
+
+.index__link:hover,
+.index__link:focus-visible {
+  border-bottom-color: var(--ink);
+}
+
 .index__row:hover .index__year,
 .index__row:hover .index__role {
   color: var(--ink);
@@ -328,7 +338,7 @@
 }
 
 .colophon__col p + p {
-  margin-top: var(--space-8);
+  margin-top: var(--space-16);
 }
 
 /* tap targets — colophon links a 38-46px sin alterar layout visual */
@@ -404,6 +414,24 @@
 
 .system__sep {
   opacity: 0.5;
+}
+
+/* tablet — ajustes para 641–1024px */
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .capabilities {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: var(--space-40);
+  }
+
+  .colophon__lead {
+    grid-column: 1 / -1;
+    margin-bottom: var(--space-40);
+  }
+
+  .colophon__col {
+    grid-column: span 4;
+  }
 }
 
 /* mobile — colapsa a una columna */

@@ -4,7 +4,7 @@
   /* color */
   --ink: #0A0A0A;
   --paper: #FAFAF7;
-  --muted: #6B6B6B;
+  --muted: #595959;        /* AAA-safe: ~6.9:1 on --paper */
   --rule: #D9D5C8;
   --accent: #FF3B00;
 
@@ -12,13 +12,13 @@
   --font-sans: "Switzer", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-mono: ui-monospace, "SF Mono", "JetBrains Mono", "IBM Plex Mono", Menlo, monospace;
 
-  /* type scale — ratio 1.333 */
+  /* type scale — ratio 1.333; clamp() para fluidez entre 640 y 1440px */
   --text-xs: 12px;
   --text-sm: 14px;
   --text-base: 16px;
   --text-lg: 21px;
-  --text-xl: 42px;
-  --text-2xl: 84px;
+  --text-xl: clamp(32px, 3.5vw, 42px);
+  --text-2xl: clamp(52px, 7vw, 84px);
   --text-3xl: 144px;
 
   /* spacing — base 8, sin valores intermedios */
