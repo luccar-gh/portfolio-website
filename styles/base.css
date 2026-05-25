@@ -38,6 +38,12 @@ html {
   color: var(--ink);
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 body {
   font-family: var(--font-sans);
   font-size: var(--text-base);
@@ -59,7 +65,7 @@ a {
   text-decoration: none;
   border-bottom: var(--rule-width) solid var(--rule);
   padding-bottom: 1px;
-  transition: border-color 240ms ease, color 240ms ease;
+  transition: border-color 320ms var(--ease), color 320ms var(--ease);
 }
 
 a:hover {
@@ -68,7 +74,7 @@ a:hover {
 
 a:focus-visible {
   outline: 2px solid var(--ink);
-  outline-offset: 4px;
+  outline-offset: 6px;
 }
 
 /* type roles */
@@ -77,14 +83,14 @@ a:focus-visible {
   font-size: var(--text-2xl);
   font-weight: 500;
   line-height: 0.95;
-  letter-spacing: -0.035em;
+  letter-spacing: -0.04em;
 }
 
 .t-display {
   font-size: var(--text-xl);
   font-weight: 500;
   line-height: 1.05;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.025em;
 }
 
 .t-lede {

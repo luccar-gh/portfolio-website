@@ -11,8 +11,8 @@
 .capabilities__group .t-label,
 .languages__item .t-label,
 .marquee__track {
-  transition: color 280ms ease, background-color 320ms ease,
-    transform 280ms ease, opacity 280ms ease;
+  transition: color 320ms var(--ease), background-color 320ms var(--ease),
+    transform 360ms var(--ease), opacity 320ms var(--ease);
 }
 
 .block:hover .block__num {
@@ -24,7 +24,7 @@
 }
 
 .index__row {
-  transition: border-color 280ms ease;
+  transition: border-color 320ms var(--ease);
 }
 
 /* index links — subrayado hover-only para no romper el ritmo tipográfico */
@@ -371,7 +371,7 @@
   align-items: center;
   gap: var(--space-40);
   white-space: nowrap;
-  animation: marquee-scroll 80s linear infinite;
+  animation: marquee-scroll 120s linear infinite;
   font-family: var(--font-sans);
   font-size: var(--text-sm);
   letter-spacing: 0.04em;

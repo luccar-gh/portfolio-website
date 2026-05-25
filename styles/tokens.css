@@ -19,7 +19,7 @@
   --text-lg: 21px;
   --text-xl: clamp(32px, 3.5vw, 42px);
   --text-2xl: clamp(52px, 7vw, 84px);
-  --text-3xl: 144px;
+  --text-3xl: clamp(64px, 9vw, 120px);
 
   /* spacing — base 8, sin valores intermedios */
   --space-8: 8px;
@@ -39,6 +39,9 @@
 
   /* rule */
   --rule-width: 1px;
+
+  /* easing — curva refinada para todas las transiciones (estilo Linear / Vercel) */
+  --ease: cubic-bezier(0.2, 0, 0.13, 1);
 }
 
 @media (max-width: 640px) {
@@ -46,6 +49,6 @@
     --grid-margin: 16px;
     --text-xl: 32px;
     --text-2xl: 52px;
-    --text-3xl: 72px;
+    --text-3xl: 64px;
   }
 }
